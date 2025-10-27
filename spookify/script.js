@@ -222,7 +222,7 @@ const musicData = {
     ]
     },
     tracks: {
-    'got-main-theme': { id: 'got-main-theme', title: 'Game of Thrones Main Theme', artist: 'Ramin Djawadi', duration: 225, icon: '🐉', src: '' },
+    'got-main-theme': { id: 'got-main-theme', title: 'Game of Thrones Main Theme', artist: 'Ramin Djawadi', duration: 225, icon: '🐉', src: 'https://open.spotify.com/track/5t5m1lX199oLwrA2MkQERn?si=e29a85230fc24863' },
     'light-of-seven': { id: 'light-of-seven', title: 'Light of the Seven', artist: 'Ramin Djawadi', duration: 600, icon: '🎹', src: '' },
     'rains-of-castamere': { id: 'rains-of-castamere', title: 'The Rains of Castamere', artist: 'Ramin Djawadi', duration: 280, icon: '🦁', src: '' },
     'stark-theme': { id: 'stark-theme', title: 'Goodbye Brother', artist: 'Ramin Djawadi', duration: 240, icon: '🐺', src: '' },
@@ -234,20 +234,22 @@ const musicData = {
     'winterfell-theme': { id: 'winterfell-theme', title: 'Winterfell', artist: 'Ramin Djawadi', duration: 198, icon: '🏰', src: '' }
     },
     houses: [
-    { id: 'stark', icon: '🐺', name: 'House Stark', subtitle: 'Winter is Coming', img: 'https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=400&h=400&fit=crop' },
-    { id: 'lannister', icon: '🦁', name: 'House Lannister', subtitle: 'Hear Me Roar', img: 'https://images.unsplash.com/photo-1542295669297-4d352b042bca?w=400&h=400&fit=crop' },
-    { id: 'targaryen', icon: '🐉', name: 'House Targaryen', subtitle: 'Fire and Blood', img: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=400&fit=crop' },
-    { id: 'tyrell', icon: '🌹', name: 'House Tyrell', subtitle: 'Growing Strong', img: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&h=400&fit=crop' },
-    { id: 'baratheon', icon: '🦌', name: 'House Baratheon', subtitle: 'Ours is the Fury', img: 'https://images.unsplash.com/photo-1551084119-2ee49f5e0f9f?w=400&h=400&fit=crop' },
-    { id: 'greyjoy', icon: '🐙', name: 'House Greyjoy', subtitle: 'We Do Not Sow', img: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=400&fit=crop' }
+    { id: 'stark', icon: '🐺', name: 'House Stark', subtitle: 'Winter is Coming', img: 'images/houses/Stark.webp' },
+    { id: 'lannister', icon: '🦁', name: 'House Lannister', subtitle: 'Hear Me Roar', img: 'images/houses/Lannister.webp' },
+    { id: 'targaryen', icon: '🐉', name: 'House Targaryen', subtitle: 'Fire and Blood', img: 'images/houses/targaryen.webp' },
+    { id: 'tyrell', icon: '🌹', name: 'House Tyrell', subtitle: 'Growing Strong', img: 'images/houses/Tyrell.webp' },
+    { id: 'baratheon', icon: '🦌', name: 'House Baratheon', subtitle: 'Ours is the Fury', img: 'images/houses/Baratheon.webp' },
+    { id: 'greyjoy', icon: '🐙', name: 'House Greyjoy', subtitle: 'We Do Not Sow', img: 'images/houses/Greyjoy.' }
     ],
     characters: [
-    { id: 'jon', icon: '🐺', name: 'Jon Snow', subtitle: 'King in the North', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop' },
-    { id: 'daenerys', icon: '🐉', name: 'Daenerys Targaryen', subtitle: 'Mother of Dragons', img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop' },
-    { id: 'tyrion', icon: '🦁', name: 'Tyrion Lannister', subtitle: 'The Halfman', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop' },
-    { id: 'arya', icon: '⚔️', name: 'Arya Stark', subtitle: 'No One', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop' },
-    { id: 'cersei', icon: '👑', name: 'Cersei Lannister', subtitle: 'Queen Regent', img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop' },
-    { id: 'jaime', icon: '🗡️', name: 'Jaime Lannister', subtitle: 'Kingslayer', img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop' }
+    { id: 'jon', icon: '🐺', name: 'Jon Snow', subtitle: 'King in the North', img: 'images/characters/jon.jpg' },
+    { id: 'daenerys', icon: '🐉', name: 'Daenerys Targaryen', subtitle: 'Mother of Dragons', img: 'images/characters/daenerys.jpg' },
+    { id: 'tyrion', icon: '🦁', name: 'Tyrion Lannister', subtitle: 'The Halfman', img: 'images/characters/tyrion.jpg' },
+    { id: 'arya', icon: '⚔️', name: 'Arya Stark', subtitle: 'No One', img: 'images/characters/arya.jpg' },
+    { id: 'cersei', icon: '👑', name: 'Cersei Lannister', subtitle: 'Queen Regent', img: 'images/characters/cersei.jpg' },
+    { id: 'jaime', icon: '🗡️', name: 'Jaime Lannister', subtitle: 'Kingslayer', img: 'images/characters/jaime.jpg' },
+    { id: 'sansa', icon: '🦅', name: 'Sansa Stark', subtitle: 'Lady of Winterfell', img: 'images/characters/sansa.jpg' },
+    { id: 'brienne', icon: '🦉', name: 'Brienne of Tarth', subtitle: 'Sworn Sword', img: 'images/characters/brienne.jpg' }
     ],
     episodes: {
     season1: [
