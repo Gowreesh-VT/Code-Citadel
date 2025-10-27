@@ -1,4 +1,4 @@
- const musicData = {
+const musicData = {
     playlists: {
     madeForYou: [
         {
@@ -276,7 +276,6 @@
     }
 };
 
- 
 let audio = document.getElementById('audioPlayer');
 let isPlaying = false;
 let currentTrack = null;
@@ -291,7 +290,6 @@ let currentHouse = 'baratheon';
 let showingLyrics = false;
 let progressUpdateInterval = null;
 
- 
 document.addEventListener('DOMContentLoaded', () => {
     selectHouse(currentHouse, true);
     renderAllContent();
@@ -321,7 +319,6 @@ function updateGreeting() {
     document.getElementById('greeting').textContent = greeting;
 }
 
- 
 function renderAllContent() {
     renderPlaylists();
     renderMadeForYou();
@@ -485,7 +482,6 @@ function playTrackById(trackId) {
     }
     currentTrack = track;
     
-    // Update UI
     const img = document.getElementById('playerImg');
     img.style.backgroundImage = '';
     img.innerHTML = `${track.icon}<div class="equalizer" id="equalizer" style="display:none"><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div></div>`;
@@ -493,7 +489,6 @@ function playTrackById(trackId) {
     document.getElementById('playerArtist').textContent = track.artist;
     document.getElementById('totalTime').textContent = formatTime(track.duration);
     
-    // Simulate playback (no actual audio file)
     audio.src = track.src || '';
     audio.currentTime = 0;
     
@@ -501,7 +496,6 @@ function playTrackById(trackId) {
     loadLyrics(trackId);
     showToast(`Now playing: ${track.title}`);
     
-    // Mark playing cards
     document.querySelectorAll('.card').forEach(c => c.classList.remove('playing'));
 }
 
@@ -566,7 +560,6 @@ function onTrackEnded() {
     }
 }
 
- 
 function startProgressSimulation() {
     stopProgressSimulation();
     progressUpdateInterval = setInterval(() => {
@@ -610,7 +603,6 @@ function formatTime(sec) {
     return `${m}:${s.toString().padStart(2, '0')}`;
 }
 
- 
 function toggleShuffle() {
     isShuffled = !isShuffled;
     const btn = document.getElementById('shuffleBtn');
@@ -661,7 +653,6 @@ function toggleFullscreen() {
     }
 }
 
- 
 function loadLyrics(trackId) {
     const lyrics = musicData.lyrics[trackId] || [];
     const container = document.getElementById('lyricsContent');
@@ -684,7 +675,6 @@ function toggleLyrics() {
     document.getElementById('lyricsPanel').classList.toggle('show', showingLyrics);
 }
 
- 
 function selectHouse(house, silent = false) {
     currentHouse = house;
     document.body.className = 'house-' + house;
@@ -698,7 +688,6 @@ function selectHouse(house, silent = false) {
     }
 }
 
- 
 function switchView(view) {
     document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
     event.target.classList.add('active');
@@ -732,14 +721,12 @@ function toggleSidebar() {
     document.getElementById('sidebar').classList.toggle('show');
 }
 
- 
 function handleSearch(query) {
     if (!query.trim()) return;
     showToast(`Searching: ${query}`);
     // Implement search functionality here
 }
 
- 
 function showCreatePlaylistModal() {
     document.getElementById('playlistModal').classList.add('show');
 }
@@ -774,7 +761,6 @@ function createPlaylist(e) {
     showToast(`Playlist "${name}" created`);
 }
 
- 
 function showToast(text) {
     const toast = document.getElementById('toast');
     const textEl = document.getElementById('toastText');
