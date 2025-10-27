@@ -1017,7 +1017,7 @@ function startPlayback() {
     document.getElementById('playPauseBtn').textContent = '⏸';
     document.getElementById('playerImg').classList.add('playing');
     document.getElementById('equalizer').style.display = 'flex';
-    startProgressSimulation();
+    audio.play();
 }
 
 function stopPlayback() {
@@ -1025,7 +1025,7 @@ function stopPlayback() {
     document.getElementById('playPauseBtn').textContent = '▶';
     document.getElementById('playerImg').classList.remove('playing');
     document.getElementById('equalizer').style.display = 'none';
-    stopProgressSimulation();
+    audio.pause();
 }
 
 function togglePlayPause() {
