@@ -13,6 +13,7 @@ The design is inspired by Spotify, and designed to give a spooky twist to your m
 ## Installation
 1. Clone the repository:
     gh repo clone Gowreesh-VT/Code-Citadel
+    cd landing-page
 
     echo "Pay Rs. 1000000 to unlock premium spookiness 👻 "
     run the following commands to install dependencies and start the development server:
