@@ -14,8 +14,8 @@ const Header: React.FC = () => {
         <a href="#">Support</a>
         <a href="#">Download</a>
         <span className="divider">|</span>
-        <button onClick={() => window.location.href = '../../spookify/index.html'}>Sign up</button>
-        <button onClick={() => window.location.href = '../../spookify/index.html'} className="login-button">Log in</button>
+        <button onClick={() => window.location.href = '/spookify/index.html'}>Sign up</button>
+        <button onClick={() => window.location.href = '/spookify/index.html'} className="login-button">Log in</button>
       </nav>
     </header>
   );

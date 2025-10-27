@@ -12,13 +12,14 @@ The design is inspired by Spotify, and designed to give a spooky twist to your m
 
 ## Installation
 1. Clone the repository:
-    git clone https://github.com/gowreeshvt/Code-Citadel.git
-    cd Code-Citadel
+    gh repo clone Gowreesh-VT/Code-Citadel
+
     echo "Pay Rs. 1000000 to unlock premium spookiness 👻 "
     run the following commands to install dependencies and start the development server:
+    
     ```bash
-    npm install spookiness
-    npm run dev
+    npm install
+    cd /Users/*username*/Documents/GitHub/Code-Citadel/landing-page; npm run dev
     just kidding
     ``` 
     just run the html file in the landing page....
