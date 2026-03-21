@@ -1,29 +1,65 @@
-# Spookify
-The landing page is done by Surya R (doortosurya.me)
-and the main spookify is done by Gowreesh V T (gowreesh.works).
+# Code-Citadel
 
-The design is inspired by Spotify, and designed to give a spooky twist to your music experience by the one and only the great Akash Vishnu P.
+A small music-themed project with two parts:
 
-## Features
-- Check Spotify
-- Pay Rs. 1000000 to access the premium spooky features
-- Enjoy spooky music
-- Game of Thrones inspired UI
+- A React + Vite landing page in `landing-page/`
+- A static music-player experience in `spookify/`
 
-## Installation
-1. Clone the repository:
-    gh repo clone Gowreesh-VT/Code-Citadel
-    cd landing-page
+## Project Structure
 
-    echo "Pay Rs. 1000000 to unlock premium spookiness 👻 "
-    run the following commands to install dependencies and start the development server:
-    
-    ```bash
-    npm install
-    cd /Users/*username*/Documents/GitHub/Code-Citadel/landing-page; npm run dev
-    just kidding
-    ``` 
-    just run the html file in the landing page....
+```text
+Code-Citadel/
+├── landing-page/                  # React + TypeScript + Vite app
+│   ├── components/                # Header, Hero, Footer
+│   ├── public/
+│   │   └── spookify/              # Static app copy served by Vite at /spookify
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── package.json
+├── spookify/                      # Standalone static app (HTML/CSS/JS + assets)
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   ├── images/
+│   └── songs/
+├── LICENSE
+└── readme.md
+```
+
+## What Runs Where
+
+- `landing-page/` is the development app and has npm scripts.
+- `spookify/` can be opened directly as a static site.
+- The landing page buttons navigate to `/spookify/index.html`, which is served from `landing-page/public/spookify/` when running Vite.
+
+## Run the Landing Page (Recommended)
+
+```bash
+git clone https://github.com/Gowreesh-VT/Code-Citadel.git
+cd Code-Citadel/landing-page
+npm install
+npm run dev
+```
+
+Then open the local URL shown by Vite (usually `http://localhost:5173`).
+
+## Build the Landing Page
+
+```bash
+cd landing-page
+npm run build
+npm run preview
+```
+
+## Run the Static Spookify App Directly
+
+Open `spookify/index.html` in a browser.
+
+## Notes
+
+- `spookify/index.html` and `landing-page/public/spookify/index.html` are currently not identical.
+- `spookify/script.js` and `spookify/style.css` are currently in sync with their copies under `landing-page/public/spookify/`.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project is licensed under the MIT License. See `LICENSE`.
